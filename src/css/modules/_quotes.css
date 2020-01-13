@@ -1,0 +1,50 @@
+.quotes{
+    display: flex;
+    margin: 0 3.8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+    line-height:1.7;
+  
+  
+ 
+     &__text-content{
+       align-self:center; 
+    }
+    
+
+    &__author{
+        margin-right: 40%;
+        border-bottom:2px black solid;
+        line-height:400%;
+        
+    }
+
+    &__author--center{
+        letter-spacing:2px;
+    }
+
+    &--center{
+        position:absolute;
+        margin:0;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        text-align:center;
+
+    }
+    
+    &--center::after{
+        display:block;
+        content: "";
+        margin: 0 auto;
+        width:20%;
+        height:5px;
+        background-color:$mainYellow;
+
+    }
+}
+    
+   
+
+    

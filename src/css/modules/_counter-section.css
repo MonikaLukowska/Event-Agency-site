@@ -1,0 +1,16 @@
+.counter-section{
+    display:flex;
+    justify-content:space-around;
+
+    &__block{
+        text-align: center;
+    }
+
+    &__count{
+        margin-bottom:0;
+        font-size:3.8rem;
+        font-weight:600;
+        color: lightblue;
+    }
+
+}

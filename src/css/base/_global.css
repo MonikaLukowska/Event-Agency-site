@@ -1,0 +1,23 @@
+
+*{
+    box-sizing:border-box;
+}
+.root {
+    max-width:1920px;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    font-weight: 300;
+    font-size: 0.95rem;
+
+}
+
+img {  
+    width: 100%;
+    height:auto;
+    display:block
+}
+
+
+
+

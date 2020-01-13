@@ -1,0 +1,30 @@
+.page-section{
+    margin: 3rem 0;
+    overflow:hidden;
+    height:100%;
+    padding-bottom: 4.9rem;
+    
+
+    &--border{
+     border-bottom: solid 2px #ddd;
+    }
+
+    &--medium-2{
+        
+        max-height:28.93rem;
+        display: flex;
+      
+        
+        &>div{
+        flex-basis:50%;
+        overflow:hidden;
+        
+      
+        }
+    }
+    &__yellow-col{
+        display:flex;
+        background-color: $mainYellow;
+        justify-content: center;
+    }
+}

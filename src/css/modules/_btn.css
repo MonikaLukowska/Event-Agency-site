@@ -1,0 +1,27 @@
+.btn{
+    background-color: $mainYellow;
+    text-decoration: none;
+    padding: .9rem 1.2rem;
+    display: inline-block;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-weight:500;
+    border-style: none;
+    
+    &:after {
+    padding:10px;
+    content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+    text-decoration:line-through;
+}
+    &--overlap{
+        position: absolute;
+        bottom: 0%;
+        left:50%;
+        transform:translate(-50%, 50%);
+      
+    }
+
+    &--half-radius{
+        border-radius: 0 2rem 2rem 0
+    }
+}

@@ -1,0 +1,31 @@
+.footer {
+  padding: 0 20px;
+  line-height: 2;
+
+  &__upper {
+    background-color: #9accb0;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    display: block;
+    border-style: none;
+    border-radius: 2rem 0 0 2rem;
+    padding-left: 2.5em;
+    text-transform: uppercase;
+
+  }
+
+  &__logo>img {
+    width: 14em;
+    height: 100px;
+    display: block;
+
+
+  }
+
+
+}

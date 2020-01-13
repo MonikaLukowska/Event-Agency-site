@@ -1,0 +1,9 @@
+.about{
+    
+  
+   
+    &__feature-container{
+        display:flex;
+        justify-content:space-between;
+    }
+}

@@ -1,0 +1,29 @@
+.row {
+    display: flex;
+    max-width: 87.5rem;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+
+
+
+    &--medium-4>div,
+    p,
+    form,
+    h3,
+    nav {
+        flex-basis: 33.3%;
+    }
+
+
+    &--left {
+        align-items: flex-start;
+
+    }
+
+    &--medium-6{
+    align-content:center;
+    align-items:stretch;
+
+   }
+}
