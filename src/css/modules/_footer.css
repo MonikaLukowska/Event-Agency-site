@@ -3,7 +3,7 @@
   line-height: 2;
 
   &__upper {
-    background-color: #9accb0;
+    background-color: $mainGreen;
   }
 
   &__form {
@@ -15,16 +15,25 @@
     border-style: none;
     border-radius: 2rem 0 0 2rem;
     padding-left: 2.5em;
+    color:#736D6D;
+    font-family: "Archivo-Bold", sans-serif;
     text-transform: uppercase;
-
   }
 
   &__logo>img {
     width: 14em;
     height: 100px;
     display: block;
+  }
 
+  &__addres{
+    color:#555555;
+    font-family: "Archivo-Regular", sans-serif;
+    font-size: 1.125rem;
 
+    >a{
+      color:#494848;
+    }
   }
 
 

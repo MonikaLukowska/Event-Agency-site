@@ -1,0 +1,23 @@
+.main-content {
+    font-family: "Archivo-Regular", sans-serif;
+    line-height: 1.9;
+    letter-spacing: 1px;
+
+    @mixin atLarge {
+        font-size: 1.3125rem;
+    }
+
+    &__slider{
+       line-height: 1.9; 
+
+       @mixin atLarge {
+        font-size: 1.5rem;
+    }
+    }
+
+    &--full-width{
+        width:66rem;
+        margin:0 auto;
+        text-align:center;
+    }
+}

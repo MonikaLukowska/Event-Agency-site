@@ -1,30 +1,43 @@
-.page-section{
+.page-section {
     margin: 3rem 0;
-    overflow:hidden;
-    height:100%;
+    overflow: hidden;
+    height: 100%;
     padding-bottom: 4.9rem;
-    
 
-    &--border{
-     border-bottom: solid 2px #ddd;
+
+    &--header{
+        margin: 0 0 3rem 0;
+        padding:0;
+        border-bottom: solid 2px #ddd;
+    }
+    &--border {
+        border-bottom: solid 2px #ddd;
     }
 
-    &--medium-2{
-        
-        max-height:28.93rem;
+    &--medium-2 {
+        max-height: 28.93rem;
+        padding: 0;
         display: flex;
-      
-        
-        &>div{
-        flex-basis:50%;
-        overflow:hidden;
-        
-      
+
+
+        &>div {
+            flex-basis: 50%;
+            overflow: hidden;
+
+
         }
     }
-    &__yellow-col{
-        display:flex;
-        background-color: $mainYellow;
+
+    &__yellow-col {
+        display: flex;
+        background-color: #FFE671;
         justify-content: center;
     }
+
+    &--gradient-bgc {
+        background-image: linear-gradient(to bottom,
+                $mainGreen 50%,
+                #fff 50%);
+    }
+
 }

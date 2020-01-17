@@ -1,13 +1,18 @@
 .wrapper {
-    max-width: 65rem;
+    width: 66rem;
     margin: 0 auto;
     text-align: center;
 
-    &--center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+   &__wrapper--center{
+       
+   }
+
+    &--nav {
+        min-width: 80rem;
+    }
+
+    &--wider {
+        width: 75rem;
     }
 
 }

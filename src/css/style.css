@@ -1,7 +1,10 @@
 @import "normalize.css";
+@import "slick-carousel/slick/slick.css";
 @import "base/_global";
 @import "base/_mixins";
 @import "base/_variables";
+@import "modules/_site-header";
+@import "modules/_main-content";
 @import "modules/_row";
 @import "modules/_hero-slider";
 @import "modules/_btn";
@@ -14,3 +17,4 @@
 @import 'modules/_nav';
 @import 'modules/_footer';
 @import 'modules/_testimonials';
+@import 'modules/_portfolio';

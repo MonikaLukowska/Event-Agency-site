@@ -1,23 +1,43 @@
-
-*{
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
-.root {
-    max-width:1920px;
-    margin: 20px;
-    font-family: 'Roboto', sans-serif;
+
+html {
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: 'Archivo-Regular', sans-serif;
     line-height: 1.7;
-    font-weight: 300;
-    font-size: 0.95rem;
+    color: #191C40;
 
 }
 
-img {  
+@font-face {
+    font-family: "Archivo-Bold";
+    src: url("/fonts/Archivo/Archivo-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Archivo-Regular";
+    src: url("/fonts/Archivo/Archivo-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Archivo-SemiBold";
+    src: url("/fonts/Archivo/Archivo-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "PlayfairDisplay-Regular";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Playfair Display-Bold";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf");
+}
+
+img {
     width: 100%;
-    height:auto;
-    display:block
+    height: auto;
+    display: block
 }
-
-
-
-

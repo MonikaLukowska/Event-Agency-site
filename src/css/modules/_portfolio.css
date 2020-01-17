@@ -1,0 +1,30 @@
+.portfolio {
+
+
+
+    &__text-content {
+        padding-bottom: 4em;
+    }
+
+    &__carousel {
+        /*display: flex;
+        justify-content: space-between;
+        flex: 0 1 30%;*/
+        margin-bottom: 5.18em;
+        max-height: 26.625rem;
+
+        .slick-slide{
+            margin:0 1em;
+        }
+    }
+
+    &__carousel__slide {
+        max-height: 26.625rem;
+        margin-left: 1rem;
+    }
+
+    &__bottom{
+        max-width:66rem;
+        margin: 0 auto;
+    }
+}

@@ -1,16 +1,27 @@
-.counter-section{
-    display:flex;
-    justify-content:space-around;
+.counter-section {
+    max-width: 65rem;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: space-between;
 
-    &__block{
+    &__block {
         text-align: center;
+
+        &>span {
+            display: block;
+        }
     }
 
-    &__count{
-        margin-bottom:0;
-        font-size:3.8rem;
-        font-weight:600;
-        color: lightblue;
+    &__count {
+        margin-bottom: 0;
+        font-family: "Archivo-Bold", sans-serif;
+        font-size: 4.62rem;
+        color: #6AC2E6;
+    }
+
+    &__desc {
+        font-family: "Archivo-Regular", sans-serif;
+        font-size: 1rem;
     }
 
 }
