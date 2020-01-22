@@ -11,7 +11,12 @@ class HeroSlider {
     slidesToShow:1,
       autoplay: true,
       arrows: false,
-      dots: false
+      dots: false,
+      fade: true,
+      cssEase:'linear',
+      pauseOnHover: true,
+      mobileFirst:true,
+      
     });
   }
 }

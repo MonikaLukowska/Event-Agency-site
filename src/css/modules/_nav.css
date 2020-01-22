@@ -8,13 +8,15 @@
   @mixin atMedium{
     display:flex;
     flex: 0 1 33%;
-    justify-content:center;
+    justify-content: space-around;;
     align-items: center;
-    font-size: 18px;
+    font-size:15px;
+    
     
   }
   @mixin atLarge{
-    justify-content:space-between;
+    justify-content:space-around;
+    font-size: 18px;
     
   }
 
@@ -23,18 +25,24 @@
     flex-direction:column;
     align-content: center;
     padding:0;
+    margin:0;
    
     @mixin atMedium {
       flex-direction:row;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
       flex: 0 1 30%;
+      margin-top:1em;
     }
   }
 
   li {
     list-style: none;
     margin: 0 30px 0 30px;
+
+    @mixin atMedium{
+      margin: 0 20px;
+    }
 
   }
   
@@ -56,7 +64,7 @@
 
     @mixin atMedium{
      display:block;
-     max-width: 230px;
+     max-width: 250px;
      flex: 0 1 40%;
       
     }
@@ -64,13 +72,21 @@
   }
 
   &--footer {
-    padding: 0;
+    padding:2em 0;
     font-size: 0.87rem;
+
+    @mixin atMedium{
+      padding: 0;
+    }
 
     ul {
       padding: 0;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
+
+      @mixin atMedium{
+        align-items:flex-start;
+      }
     }
 
     a {
@@ -78,6 +94,7 @@
       line-height: 2.5;
       letter-spacing:1.3px;
       color:#A0A0A0;
+      
     }
 
     a:link:active{

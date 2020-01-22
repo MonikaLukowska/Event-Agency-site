@@ -3,12 +3,24 @@
     line-height: 1.9;
     letter-spacing: 1px;
 
+
     @mixin atLarge {
         font-size: 1.3125rem;
     }
 
-    &__slider{
-       line-height: 1.9; 
+    &--slider{
+       padding: 0 1.5em;
+       line-height: 1.9;
+       font-size:0.85rem;
+
+       @mixin atSmall{
+           font-size:1.1rem;
+           padding: 0 1.5em;
+       } 
+
+       @mixin atMedium{
+           font-size:1.3rem;
+       }
 
        @mixin atLarge {
         font-size: 1.5rem;
@@ -16,8 +28,18 @@
     }
 
     &--full-width{
-        width:66rem;
+        max-width:66rem;
         margin:0 auto;
         text-align:center;
+    }
+
+    &--sm-center{
+        text-align:center;
+        margin-bottom:2.5em;
+
+        @mixin atMedium{
+            text-align:left;
+            margin-bottom:0;
+        }
     }
 }

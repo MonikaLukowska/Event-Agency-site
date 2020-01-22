@@ -8,12 +8,22 @@
     }
 
     &__slide {
-        background-image: url('/images/baloons.png');
+        background-image: url('./images/baloons.png');
         background-size: cover;
+        background-position:center;
         background-repeat: no-repeat;
         padding:0;
-        height:40rem;
+        height:18rem;
         
+        @mixin atSmall{
+            height:25rem;
+        }
+        @mixin atMedium{
+            height:30rem;
+        }
+        @mixin atLarge{
+            height:40rem;
+        }
     }
 
     &__text-content{
@@ -34,8 +44,41 @@
     padding:0;
 
     }
+    
     .slide-interior-container{
         height:100%;
     }
+    .slick-dots {
+    position:absolute;
+    top:50%;
+    left:98%;
+    transform: translateY(-50%);
+	margin: 0;
+	padding: 1rem 0;
+	
+	list-style-type: none;
+	
+		li {
+			margin: 0.25rem;
+		}
+	
+		button {
+			display: block;
+			width: 0.7rem;
+			height: 0.7rem;
+			padding: 0;
+			
+			border: 1px solid #191C40;
+			border-radius: 100%;
+			background-color: rgba(#E6E6E6, .1);
+			
+			text-indent: -9999px;
+		}
+	
+		li.slick-active button {
+			background-color: #191C40;
+		}
+	
+}
 
 }

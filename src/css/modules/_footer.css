@@ -1,27 +1,46 @@
 .footer {
-  padding: 0 20px;
+  padding:0 1.25em;
   line-height: 2;
 
   &__upper {
-    background-color: $mainGreen;
+    padding:1.25em;
+    background-color: #6ac2e6;
+
+    @mixin atMedium{
+      padding:0 1.25em;
+    }
   }
 
   &__form {
     display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    
+
+    @mixin atSmall{
+      flex-direction:row;
+    }
   }
 
   &__input {
     display: block;
     border-style: none;
-    border-radius: 2rem 0 0 2rem;
-    padding-left: 2.5em;
+    border-radius: 2rem;
+    padding: 1em 4em;
+    margin-bottom:1em;
     color:#736D6D;
     font-family: "Archivo-Bold", sans-serif;
     text-transform: uppercase;
+
+    @mixin atSmall{
+    border-radius: 2rem 0 0 2rem;
+    padding: 0 0 0 2.5em;
+    margin-bottom:0;
+    }
   }
 
   &__logo>img {
-    width: 14em;
+    max-width: 20em;
     height: 100px;
     display: block;
   }
@@ -30,10 +49,23 @@
     color:#555555;
     font-family: "Archivo-Regular", sans-serif;
     font-size: 1.125rem;
+    text-align:center;;
+
+    @mixin atMedium{
+      text-align:left;
+    }
 
     >a{
       color:#494848;
     }
+
+    >p{
+      padding:0;
+    }
+  }
+
+  &--border-top{
+    border: solid 2px #ddd;
   }
 
 

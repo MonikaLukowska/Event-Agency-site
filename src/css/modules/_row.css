@@ -7,18 +7,37 @@
 
 
 
-    &--medium-4>div,
-    p,
-    form,
-    h3,
-    nav {
-        flex-basis: 33%;
+
+
+    &--medium-4{
+        flex-direction:column;
+        
+
+        @mixin atMedium{
+            flex-direction:row;
+            justify-content:space-around;
+           
+
+             &>div,
+                p,
+                form,
+                h3,
+                nav {
+                flex-basis: 33%;
+                padding: 0 1rem 0 0;
+                }
+        }
+
+       
+
     }
 
+    &--start {
 
-    &--left {
+        @mixin atMedium{
+        
         align-items: flex-start;
-
+        }
     }
 
     &--medium-6{
@@ -27,7 +46,8 @@
 
    }
 
-   &__features{
-       justify-content:space-between;
+   &--features{
+       justify-content:center;
+
    }
 }

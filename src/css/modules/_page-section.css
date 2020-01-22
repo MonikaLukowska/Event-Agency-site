@@ -5,25 +5,44 @@
     padding-bottom: 4.9rem;
 
 
-    &--header{
+    &--header {
         margin: 0 0 3rem 0;
-        padding:0;
+        padding: 0;
         border-bottom: solid 2px #ddd;
     }
+
+    &--sm-nopadding {
+        padding-bottom: 0;
+    }
+
     &--border {
         border-bottom: solid 2px #ddd;
     }
 
-    &--medium-2 {
-        max-height: 28.93rem;
+    &--medium-6 {
         padding: 0;
         display: flex;
+        flex-direction: column;
+        align-items: stretch;
 
+        @mixin atMedium {
+            max-height: 28.93rem;
+            flex-direction: row;
+        }
 
         &>div {
-            flex-basis: 50%;
-            overflow: hidden;
+            max-height: 20rem;
 
+            @mixin atMedium {
+                max-height: 28.93rem;
+                flex-basis: 50%;
+                overflow: hidden;
+            }
+
+            &>img {
+                height: 100%;
+                width: 100%;
+            }
 
         }
     }
@@ -32,6 +51,7 @@
         display: flex;
         background-color: #FFE671;
         justify-content: center;
+
     }
 
     &--gradient-bgc {

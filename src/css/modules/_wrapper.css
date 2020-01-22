@@ -1,18 +1,26 @@
 .wrapper {
-    width: 66rem;
+    max-width: 18.75rem;
+    padding: 0 1em;
     margin: 0 auto;
-    text-align: center;
+    text-align: center; 
+    
+    @mixin atSmall{
+        max-width:55rem;
+        padding: 0 2.5em;
+    }
+    @mixin atMedium{
+      max-width: 70rem; 
+      
+    }
 
-   &__wrapper--center{
-       
-   }
 
     &--nav {
-        min-width: 80rem;
+        max-width: 85rem;
     }
 
     &--wider {
-        width: 75rem;
+        max-width: 86rem;
+        padding: 0 2.8em;
     }
 
 }

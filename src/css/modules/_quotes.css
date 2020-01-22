@@ -1,25 +1,41 @@
 .quotes {
+    max-width:40rem;
     display: flex;
-    margin: 0 6em;
+    padding: 0 2em;
     justify-content: center;
     align-content: center;
     line-height: 1.7;
     letter-spacing: 1px;
-    font-size: 1.3125rem;
 
+    @mixin atSmall{
+        padding: 2.5em 5em 4em 5em;
+    }
+    @mixin atMedium{
+         padding: 2.5em 3em 4em 3em;
+    }
+
+    @mixin atLarge{
+        padding: 1em 6em;
+    }
 
     &__quotation {
         margin-right: 0.2em;
         font-family: "Palanquin", sans-serif;
         align-self: flex-start;
-        font-size: 10rem;
+        font-size: 7rem;
+        line-height:1;
+
+        @mixin atMedium{
+            font-size: 9rem;
+            line-height:1;
+        }
 
 
     }
 
     &__content {
         align-self: center;
-        font-size: 1.3125rem;
+        /*font-size: 1.3125rem;*/
     }
 
     &__text-content {
@@ -62,7 +78,7 @@
         display: block;
         content: "";
         margin: 0 auto;
-        width: 10%;
+        width: 15%;
         height: 5px;
         background-color: $mainYellow;
 

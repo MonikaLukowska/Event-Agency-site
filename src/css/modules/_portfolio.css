@@ -16,11 +16,34 @@
         .slick-slide{
             margin:0 1em;
         }
+        
+        .fa-arrow-left{
+        position:absolute;
+        top:50%;
+        left: -40px;
+        padding-left:1em;
+       
+
+          &:hover{
+            cursor:pointer;
+          }
+        }
+        .fa-arrow-right{
+        position:absolute;
+        top:50%;
+        right: -40px;
+        padding-right: 1em;
+        
+        
+          &:hover{
+            cursor:pointer;
+            }
+        }
     }
 
     &__carousel__slide {
         max-height: 26.625rem;
-        margin-left: 1rem;
+        /*margin-right:1rem;*/
     }
 
     &__bottom{

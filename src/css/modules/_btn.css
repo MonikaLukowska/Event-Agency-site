@@ -1,13 +1,15 @@
 .btn {
     background-color: $mainYellow;
     text-decoration: none;
-    padding: 1.1rem 1.7rem;
+    padding: 1em 1.5em;
     display: inline-block;
     border-radius: 2rem;
     text-transform: uppercase;
+    font-size:0.9rem;
     font-weight: 500;
     font-family: 'Archivo-Bold', sans-serif;
     border-style: none;
+    cursor:pointer;
 
     &:after {
         padding: 10px;
@@ -16,6 +18,7 @@
     }
 
     @mixin atMedium {
+        padding: 1.1rem 1.7rem;
         font-size: 1.11rem;
     }
 
@@ -28,6 +31,33 @@
     }
 
     &--half-radius {
-        border-radius: 0 2rem 2rem 0
+        border-radius:2rem;
+        width:60%;
+        margin:0 auto;
+
+        @mixin atSmall{
+        border-radius: 0 2rem 2rem 0;
+        width:100%;
+        }
+    }
+
+    &--up{
+        position:relative;;
+        bottom:0;
+        width:4.3em;
+        height:4.3em;
+        margin-bottom:1.5em;
+        border-radius:50%;
+        
+        @mixin atMedium{
+        bottom:-100px;
+        margin-bottom:0;
+        }
+
+        &:after {
+        padding: 0;
+        content: "";
+        text-decoration: none;
+    }
     }
 }

@@ -1,15 +1,33 @@
+@import "../base/_mixins";
+
 * {
     box-sizing: border-box;
 }
+.root{
+    max-width:100%vw;
+}
 
-html {
+body {
     max-width: 1920px;
     margin: 0 auto;
     font-family: 'Archivo-Regular', sans-serif;
     line-height: 1.7;
     color: #191C40;
+    font-size:0.9rem;
+
+     @mixin atSmall{
+        font-size:1rem;
+    }
+    @mixin atMedium{
+       font-size:1.1rem; 
+    }
+
+    @mixin atLarge{
+        font-size: 1.3125rem;
+    }
 
 }
+
 
 @font-face {
     font-family: "Archivo-Bold";
@@ -37,7 +55,7 @@ html {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block
 }

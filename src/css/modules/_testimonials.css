@@ -1,23 +1,31 @@
 .testimonials {
   position: relative;
-  height: 40rem;
-  background-image: url("images/testimonials-background.jpg");
+  height: 25rem;
+  background-image: url("./images/testimonials-background.jpg");
   background-size: cover;
   text-align: center;
+
+  @mixin atMedium{
+    height: 40rem;
+  }
 
   &__slider {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%;
+    width: 90%;
     height: 80%;
     background-color: #fff;
+
+    @mixin atMedium{
+      width:60%;
+    }
 
   }
 
   &__slides-container {
-    width: 40rem;
+    max-width: 40rem;
     height:100%;
     margin: 0 auto;
     background-color: #fff;
@@ -27,13 +35,26 @@
   }
 
   &__logo-container {
-    max-height:100px;
-    margin: 8.125em 1.5em 0 1.5em;
+   
+    margin: 3.125em 1.5em 0 1.5em;
     display: flex;
-    flex: 0 1 14%;
+    flex: 0 1 50%;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content: flex-end;
+
+    @mixin atMedium{
+      margin: 6.125em 1.5em 2em 1.5em;
+      max-height:100px;
+      flex-wrap:nowrap;
+    }
   }
 
   &__logo-item {
+    flex: 0 1 50%;
+    max-width:10rem;
+    margin-top:2em;
+    flex-basis:50%;
     filter: grayscale(100%);
     transform: scale(0.9);
     transition: all 0.4s ease-out;
