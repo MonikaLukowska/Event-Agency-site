@@ -19,6 +19,7 @@
                     <div class="site-header__menu-icon" id="site-header__menu-icon">
                         <div class="site-header__menu-icon__middle"></div>
                     </div>
+                    <div class="site-header__logo-mobile"><img src="./images/studio_logo_sm.png" alt="logo studion MB" /></div>
                     <div class="site-header__content" id="site-header__content">
                         <nav class="navigation">
                             <ul class="navigation__left">
@@ -40,7 +41,7 @@
     </div>
     <div class="hero-slider">
         <div class="hero-slider__container">
-            <div class="hero-slider__slide">
+            <div class="hero-slider__slide hero-slider__slide--1">
                 <!-- <div class="hero-slider__image-container">
             <img src="/images/baloons.png" alt="">
            </div> -->
@@ -55,25 +56,25 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-slider__slide">
+            <div class="hero-slider__slide hero-slider__slide--2 lazyload">
                 <!-- <div class="hero-slider__image-container">
             <img src="/images/baloons.png" alt="">
            </div> -->
                 <div class="hero-slider__overlay container">
                     <div class="hero-slider__text-content">
-                        <h1 class="headline headline--large">Działamy efektywnie</h1>
-                        <p class="main-content main-content--slider">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        <h1 class="headline headline--large white">Działamy efektywnie</h1>
+                        <p class="main-content main-content--slider white">Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Proin a vestibulum enim, eget mattis
                             ligula.
                             Morbi et faucibus urna. </p>
                     </div>
                 </div>
             </div>
-            <div class="hero-slider__slide">
+            <div class="hero-slider__slide hero-slider__slide--3 lazyload">
                 <div class="hero-slider__overlay container">
                     <div class="hero-slider__text-content">
-                        <h1 class="headline headline--large">Patrzymy przyszłościowo</h1>
-                        <p class="main-content main-content--slider">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        <h1 class="headline headline--large white">Patrzymy przyszłościowo</h1>
+                        <p class="main-content main-content--slider white">Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Proin a vestibulum enim, eget mattis
                             ligula.
                             Morbi et faucibus urna.</p>
@@ -104,10 +105,13 @@
         </div>
     </div>
     <div class="page-section page-section--medium-6">
-        <div><img class="lazyload" data-src="./images/laughing-boy-hd.png" alt="happy child"></div>
+        <picture>
+        <source data-srcset="./images/laughing-boy-hd.png" media="(min-width: 600px)">
+        <img class="lazyload" data-src="./images/laughing_boy_small.png" alt="happy child">
+        </picture>
         <div class="page-section__yellow-col">
             <div class="quotes">
-                <span class="quotes__quotation">"</span>
+                <div class="quotes__quotation"><img src="./images/quotation.png" alt="quotation icon" /></div>
                 <div class="quotes__content">
                     <p class="qutes__text">Ludzie wystarczająco szaleni, by sądzić, ze mogą zmienić świat, są tymi,
                         którzy go
@@ -157,36 +161,63 @@
                 </div>
                 <div class="portfolio__bottom">
                     <div class="portfolio__carousel">
-                        <div class="portfolio__carousel__slide"><img class="lazyload"
+                         <figure class="portfolio__carousel__slide"><img class="lazyload"
                                 src="./images/portfolio slider 1.png" alt="" />
-                        </div>
-                        <div class="portfolio__carousel__slide"><img class="lazyload"
+                        <a class="overlay" href="#"> 
+                   <figcaption class="overlay"><p>Nazwa eventu</p></figcaption>
+                      </a>
+                     </figure>
+                        <figure class="portfolio__carousel__slide"><img class="lazyload"
                                 src="./images/portfolio slider 2.png" alt="" />
-                        </div>
-                        <div class="portfolio__carousel__slide"><img class="lazyload"
+                        <a class="overlay" href="#"> 
+                   <figcaption class="overlay"><p>Nazwa eventu</p></figcaption>
+                      </a>
+                     </figure>
+                        <figure class="portfolio__carousel__slide"><img class="lazyload"
                                 src="./images/portfolio slider 3.png" alt="" />
-                        </div>
-                        <div class="portfolio__carousel__slide"><img class="lazyload"
+                        <a class="overlay" href="#"> 
+                   <figcaption class="overlay"><p>Nazwa eventu</p></figcaption>
+                      </a>
+                     </figure>
+                        <figure class="portfolio__carousel__slide"><img class="lazyload"
                                 src="./images/portfolio slider 1.png" alt="" />
-                        </div>
-                        <div class="portfolio__carousel__slide"><img class="lazyload"
+                        <a class="overlay" href="#"> 
+                   <figcaption class="overlay"><p>Nazwa eventu</p></figcaption>
+                      </a>
+                     </figure>
+                        <figure class="portfolio__carousel__slide"><img class="lazyload"
                                 src="./images/portfolio slider 2.png" alt="" />
-                        </div>
-                        <div class="portfolio__carousel__slide"><img class="lazyload"
+                        <a class="overlay" href="#"> 
+                   <figcaption class="overlay"><p>Nazwa eventu</p></figcaption>
+                      </a>
+                     </figure>
+                        <figure class="portfolio__carousel__slide"><img class="lazyload"
                                 src="./images/portfolio slider 3.png" alt="" />
-                        </div>
-                        <div class="portfolio__carousel__slide"><img class="lazyload"
+                        <a class="overlay" href="#"> 
+                   <figcaption class="overlay"><p>Nazwa eventu</p></figcaption>
+                      </a>
+                     </figure>
+                        <figure class="portfolio__carousel__slide"><img class="lazyload"
                                 src="./images/portfolio slider 1.png" alt="" />
-                        </div>
-                        <div class="portfolio__carousel__slide"><img class="lazyload"
+                        <a class="overlay" href="#"> 
+                   <figcaption class="overlay"><p>Nazwa eventu</p></figcaption>
+                      </a>
+                     </figure>
+                        <figure class="portfolio__carousel__slide"><img class="lazyload"
                                 src="./images/portfolio slider 2.png" alt="" />
-                        </div>
-                        <div class="portfolio__carousel__slide"><img class="lazyload"
+                        <a class="overlay" href="#"> 
+                   <figcaption class="overlay"><p>Nazwa eventu</p></figcaption>
+                      </a>
+                     </figure>
+                        <figure class="portfolio__carousel__slide"><img class="lazyload"
                                 src="./images/portfolio slider 3.png" alt="" />
-                        </div>
+                        <a class="overlay" href="#"> 
+                   <figcaption class="overlay"><p>Nazwa eventu</p></figcaption>
+                      </a>
+                     </figure>
 
                     </div>
-                    <a class="btn">zobacz więcej</a>
+                    <a class="btn" href="#">zobacz więcej</a>
                 </div>
             </div>
         </div>
@@ -198,7 +229,7 @@
                 <div class="testimonials__slides-container">
                     <div class="testimonials__slide">
                         <div class="quotes quotes--column">
-                            <span class="quotes__quotation">"</span>
+                            <div class="quotes__quotation"><img src="./images/quotation.png" alt="quotation icon" /></div>
                             <p class="quotes__text-content">Morbi et faucibus urna. Nulla commodo suscipit iaculis. Nam
                                 sit amet
                                 commodo tortor, necpulvinar diam</p>
@@ -207,7 +238,7 @@
                     </div>
                     <div class="testimonials__slide">
                         <div class="quotes quotes--column">
-                            <span class="quotes__quotation">"</span>
+                           <div class="quotes__quotation"><img src="./images/quotation.png" alt="quotation icon" /></div>
                             <p class="quotes__text-content">Morbi et faucibus urna. Nulla commodo suscipit iaculis. Nam
                                 sit amet
                                 commodo tortor, necpulvinar diam</p>
@@ -216,7 +247,7 @@
                     </div>
                     <div class="testimonials__slide">
                         <div class="quotes quotes--column">
-                            <span class="quotes__quotation">"</span>
+                            <div class="quotes__quotation"><img src="./images/quotation.png" alt="quotation icon" /></div>
                             <p class="quotes__text-content">Morbi et faucibus urna. Nulla commodo suscipit iaculis. Nam
                                 sit amet
                                 commodo tortor, necpulvinar diam</p>
@@ -225,7 +256,7 @@
                     </div>
                     <div class="testimonials__slide">
                         <div class="quotes quotes--column">
-                            <span class="quotes__quotation">"</span>
+                           <div class="quotes__quotation"><img src="./images/quotation.png" alt="quotation icon" /></div>
                             <p class="quotes__text-content">Morbi et faucibus urna. Nulla commodo suscipit iaculis. Nam
                                 sit amet
                                 commodo tortor, necpulvinar diam</p>
@@ -235,15 +266,17 @@
                 </div>
             </div>
         </div>
+        <h2 class="headline headline--medium headline--logo-container">Zaufali nam</h2>
         <div class="testimonials__logo-container">
-            <div class="testimonials__logo-item"><img src="./images/unilever-logo.png" /></div>
-            <div class="testimonials__logo-item"><img src="./images/unilever-logo.png" /></div>
-            <div class="testimonials__logo-item"><img src="./images/unilever-logo.png" /></div>
-            <div class="testimonials__logo-item"><img src="./images/unilever-logo.png" /></div>
-            <div class="testimonials__logo-item"><img src="./images/unilever-logo.png" /></div>
-            <div class="testimonials__logo-item"><img src="./images/unilever-logo.png" /></div>
-            <div class="testimonials__logo-item"><img src="./images/unilever-logo.png" /></div>
-            <div class="testimonials__logo-item"><img src="./images/unilever-logo.png" /></div>
+            <div class="testimonials__logo-item"><img src="./images/20479646_1578872805489120_9099902035367873852_n.png" /></div>
+            <div class="testimonials__logo-item"><img src="./images/centrum-handlowe-vivo-vivo-stalowa-wola-1701.jpg" /></div>
+            <div class="testimonials__logo-item"><img src="./images/galena-logo-www.png" /></div>
+            <div class="testimonials__logo-item"><img src="./images/galeria-pomorska.png" /></div>
+            <div class="testimonials__logo-item"><img src="./images/images (1).png" /></div>
+            <div class="testimonials__logo-item"><img src="./images/images.png" /></div>
+            <div class="testimonials__logo-item"><img src="./images/logo-3.png" /></div>
+            <div class="testimonials__logo-item"><img src="./images/pobrany plik.png" /></div>
+            <div class="testimonials__logo-item"><img src="./images/unnamed-4.jpg" /></div>
         </div>
     </div>
 
@@ -283,7 +316,7 @@
 
 
 
-    <script src="bundled.js"></script>
+    
 </body>
 
 </html>

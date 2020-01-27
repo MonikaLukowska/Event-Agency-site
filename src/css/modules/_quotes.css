@@ -1,41 +1,68 @@
 .quotes {
+    position:relative;
     max-width:40rem;
     display: flex;
     padding: 0 2em;
     justify-content: center;
     align-content: center;
-    line-height: 1.7;
     letter-spacing: 1px;
 
     @mixin atSmall{
         padding: 2.5em 5em 4em 5em;
     }
     @mixin atMedium{
-         padding: 2.5em 3em 4em 3em;
+        margin:0 3em 0 1.3em;
+        padding: 1em 0;
     }
 
     @mixin atLarge{
-        padding: 1em 6em;
+        width:70%;
+        margin:0 3em 0 1.3em;
+        padding: 1em 0;
     }
 
     &__quotation {
-        margin-right: 0.2em;
-        font-family: "Palanquin", sans-serif;
-        align-self: flex-start;
-        font-size: 7rem;
-        line-height:1;
+        padding-top:1em;
+        position:absolute;
+        top:0%;
+        left:5%;
+
+
+        >img{
+            width:50%;
+        }
 
         @mixin atMedium{
-            font-size: 9rem;
-            line-height:1;
+            left:0;
+
+            >img{
+                width:70%;
+            }
         }
+
+        @mixin atLarge{
+            >img{
+                width:80%;
+            }
+        }
+
 
 
     }
 
     &__content {
         align-self: center;
-        /*font-size: 1.3125rem;*/
+        padding-left:2em;
+        line-height:1.5;
+        @mixin atMedium{
+            padding-left:3.5em;
+            line-height:2;
+        }
+
+        @mixin atLarge{
+            padding-left:4em;
+        }
+
     }
 
     &__text-content {
@@ -45,7 +72,7 @@
 
 
     &__author {
-        margin-right: 40%;
+        margin-right: 30%;
         border-bottom: 2px black solid;
         line-height: 400%;
 
@@ -59,15 +86,47 @@
 
     &--column { 
         height:100%;
+       
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin:0; 
+        margin:0 auto; 
         text-align: center;
 
         .quotes__quotation {
-            line-height: 0.3;
-            align-self: center;
+        padding-top:0;
+        padding-bottom:15px;
+        position:absolute;
+        top:5%;;
+        left:55%;
+        transform:translateX(-50%);
+
+        @mixin atSmall{
+            top:10%;
+        }
+
+        @mixin atMedium{
+            top:15%;
+            left:50%;
+        }
+
+
+        >img{
+            width:50%;
+        }
+
+        @mixin atMedium{
+
+            >img{
+                width:70%;
+            }
+        }
+
+        @mixin atLarge{
+            >img{
+                width:80%;
+            }
+        }
         }
 
     }

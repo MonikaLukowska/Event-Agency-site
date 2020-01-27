@@ -1,7 +1,7 @@
 .banner{
-    width:100%;
-    height:15rem;
-   background-image:url('./images/baloons.png');
+   width:100%;
+   height:15rem;
+   background-image:url('./images/baloons_small.png');
    background-size:cover;
    background-repeat:no-repeat;
    background-position:center;
@@ -11,6 +11,7 @@
             height:18rem;
         }
         @mixin atMedium{
+            background-image:url('./images/baloons.png');
             height:22rem;
         }
         @mixin atLarge{
@@ -18,15 +19,16 @@
         }
 
         &--tall{
-        height:25rem;
+        height:100vh;
         position:relative;
-        background-image:url('./images/kontakt.png');
+        background-image:url('./images/contact_mobile.png');
             
             @mixin atSmall{
-            height:30rem;
+            height:32rem;
             }
 
             @mixin atMedium{
+                background-image:url('./images/kontakt.png');
                 height:40rem;
             }
             
@@ -80,6 +82,20 @@
             }
 
            
+        }
+
+        &--artists{
+            padding:2em 1.5em 3em;
+            background-color:$mainGreen;
+            height:auto;
+
+            @mixin atMedium{
+                height:655px;
+            }
+
+            @mixin atLarge{
+                height: 515px;
+            }
         }
 
 }

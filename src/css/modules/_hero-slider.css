@@ -8,21 +8,42 @@
     }
 
     &__slide {
-        background-image: url('./images/baloons.png');
         background-size: cover;
         background-position:center;
         background-repeat: no-repeat;
         padding:0;
-        height:18rem;
+        height:55vh;
         
-        @mixin atSmall{
-            height:25rem;
-        }
-        @mixin atMedium{
+       /*@mixin atMedium{
             height:30rem;
         }
         @mixin atLarge{
             height:40rem;
+        }*/
+
+        &--1{
+           background-image: url('./images/baloons_small.png');
+
+           @mixin atMedium{
+              background-image: url('./images/baloons.png'); 
+           } 
+        }
+
+        &--2{
+            background-image: url('./images/concert_mobile.png');
+
+
+            @mixin atMedium{
+              background-image: url('./images/concert.png');  
+            }
+        }
+
+        &--3{
+            background-image: url('./images/creative_mind_mobile.png');
+
+            @mixin atMedium{
+                background-image: url('./images/creative_mind.png');
+            }
         }
     }
 

@@ -11,7 +11,15 @@ class TestimonialSlider {
     slidesToShow:1,
       autoplay: true,
       arrows: false,
-      dots: false
+      dots: false,
+      responsive:[
+        {
+        breakpoint:900,
+        settings:{
+          dots:true
+          }
+      }
+      ]
     });
   }
 }

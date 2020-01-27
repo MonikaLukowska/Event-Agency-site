@@ -1,5 +1,5 @@
 .page-section {
-    margin: 3rem 0;
+    margin: 3rem 0;   
     overflow: hidden;
     height: 100%;
     padding-bottom: 4.9rem;
@@ -25,15 +25,27 @@
         flex-direction: column;
         align-items: stretch;
 
+        &>div{
+            height:50vh;
+        }
+        &>picture{
+            height:45vh;
+            >img{
+                width:100%;
+                height:100%
+            }
+        }
+
         @mixin atMedium {
             max-height: 28.93rem;
             flex-direction: row;
         }
 
-        &>div {
-            max-height: 20rem;
+       &>div,picture {
+           
 
             @mixin atMedium {
+                height:auto;
                 max-height: 28.93rem;
                 flex-basis: 50%;
                 overflow: hidden;

@@ -1,0 +1,64 @@
+.artists{
+    
+    list-style:none;
+    position:relative;
+
+    @mixin atSmall{
+     margin:0;
+
+         &:after{
+    content:"";
+    display:block;
+    position:absolute;
+    top:50%;
+    left:120%;
+    transform:translateY(-50%);
+    height:70px;
+    width:2px;
+    border-right:solid 2px black;
+
+        @mixin atSmall{
+            left:100%;
+
+        }
+
+    }
+
+    &:nth-child(5):after{
+        display:none;
+    }
+        @mixin atSmall{
+            &:nth-child(even):after{
+                display:none;
+              }
+        
+        }
+
+        @mixin atMedium{
+            &:nth-child(even):after{
+                display:block;
+              }
+            &:nth-child(3):after{
+            display:none;
+        }
+
+        @mixin atLarge{
+            &:nth-child(3):after{
+                display:block;
+              }
+        }
+
+    }
+
+   
+
+    >li{
+        margin: 1.5em 0;
+        font-size:1rem;
+
+        @mixin atSmall{
+            margin:0.8em 0;
+        }
+    }
+    }       
+}

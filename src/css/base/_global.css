@@ -11,7 +11,7 @@ body {
     max-width: 1920px;
     margin: 0 auto;
     font-family: 'Archivo-Regular', sans-serif;
-    line-height: 1.7;
+    line-height: 2;
     color: #191C40;
     font-size:0.9rem;
 
@@ -58,4 +58,20 @@ img {
     max-width: 100%;
     height: auto;
     display: block
+}
+
+.white{
+    color:#fff;
+}
+a{
+    display:block;
+    margin:0;
+    padding:0;
+    >figure{
+        margin:0;
+    }
+}
+
+a:link{
+    color: #191C40;
 }

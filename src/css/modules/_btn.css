@@ -32,24 +32,26 @@
 
     &--half-radius {
         border-radius:2rem;
-        width:60%;
+        width:100%;
         margin:0 auto;
 
-        @mixin atSmall{
+        @mixin atMedium{
         border-radius: 0 2rem 2rem 0;
         width:100%;
         }
     }
 
     &--up{
+        display:none;
+        
+        @mixin atMedium{
+        display:block;
         position:relative;;
         bottom:0;
         width:4.3em;
         height:4.3em;
         margin-bottom:1.5em;
         border-radius:50%;
-        
-        @mixin atMedium{
         bottom:-100px;
         margin-bottom:0;
         }

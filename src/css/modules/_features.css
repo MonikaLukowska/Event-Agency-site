@@ -1,5 +1,5 @@
 .feature-block{
-        margin: 3em 1em;
+        margin: 3em 0;
         display:flex;
         flex-direction:column;
         align-items:stretch;
@@ -7,12 +7,13 @@
 
         @mixin atLarge{
         min-width:25rem;
-        margin: 3em 0;
+        margin: 3em 1em 4em;
         }
         
         &:nth-child(2){
             position: relative;
-            top:20px;
+            top:30px;
+           
         }
 
         &>img{
@@ -26,8 +27,9 @@
     
 
     &__desc{
-        width:100%;
-        padding:0;
+        max-width:20rem;
+        margin:0 auto;
+        padding-right:0;
         text-transform:uppercase;
         font-family: "Archivo-SemiBold", sans-serif;
         font-size: 1rem;

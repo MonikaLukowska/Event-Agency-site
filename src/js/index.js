@@ -6,7 +6,7 @@ import MobileMenu from './modules/MobileMenu';
 import HeroSlider from './modules/HeroSlider';
 import TestimonialsSlider from './modules/TestimonialsSlider';
 import PortfolioCarousel from './modules/PortfolioCarousel';
-import {Map} from './modules/Map'
+//import {Map} from './modules/Map'
 
 if(module.hot) {
     module.hot.accept()
@@ -17,11 +17,11 @@ const heroSlider = new HeroSlider();
 const testimonialsSlider = new TestimonialsSlider();
 const portfolioCarousel = new PortfolioCarousel();
 
-document.addEventListener("DOMContentLoaded", function() {
-  let mapElement = document.getElementById('map');
+// document.addEventListener("DOMContentLoaded", function() {
+//   let mapElement = document.getElementById('map');
 
-  Map.loadGoogleMapsApi().then(function(googleMaps) {
-    Map.createMap(googleMaps, mapElement);
-  });
+//   Map.loadGoogleMapsApi().then(function(googleMaps) {
+//     Map.createMap(googleMaps, mapElement);
+//   });
   
-});
+// });

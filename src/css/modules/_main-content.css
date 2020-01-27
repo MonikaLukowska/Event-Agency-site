@@ -9,17 +9,21 @@
     }
 
     &--slider{
-       padding: 0 1.5em;
+        display: none;
+       /*padding: 0 1.5em;
        line-height: 1.9;
        font-size:0.85rem;
 
        @mixin atSmall{
            font-size:1.1rem;
            padding: 0 1.5em;
-       } 
+       } */
 
        @mixin atMedium{
+           display:block;
            font-size:1.3rem;
+           padding: 0 1.5em;
+           
        }
 
        @mixin atLarge {

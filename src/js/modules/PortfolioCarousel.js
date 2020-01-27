@@ -12,20 +12,23 @@ class PortfolioCarousel{
     slidesToShow:3,
       autoplay: true,
       lazyload:true,
-      nextArrow: '<i class="fa fa-arrow-right"></i>',
-      prevArrow: '<i class="fa fa-arrow-left"></i>',
+      nextArrow: '<i class="fas fa-chevron-right"></i>',
+      prevArrow: '<i class="fas fa-chevron-left"></i>',
       dots: false,
       responsive:[
         {
         breakpoint:900,
         settings:{
-            slidesToShow:2
+            slidesToShow:2,
+            dots: false
             }
       },
         {
         breakpoint:530,
         settings:{
-          slidesToShow:1
+          slidesToShow:1,
+           arrows:false,
+           dots:true
           }
       }
       ]
